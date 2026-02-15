@@ -3,7 +3,14 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
+  tags:
+    name: ansible
+    project: roboshop
+    coomponent: catalogue
   tasks:
   - name: split
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
+  - name: convert tags
+    ansible.builtin.debug:
+      msg: "{{ tags | dict2items }}"
