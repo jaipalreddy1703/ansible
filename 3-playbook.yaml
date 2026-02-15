@@ -1,0 +1,9 @@
+- name: Install Nginx web server
+  hosts: web
+  become: yes
+  tasks:
+  - name: Start Nginx service and enable it on boot
+    ansible.builtin.package:
+      name: nginx
+      state: started
+      enabled: yes
