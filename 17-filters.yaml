@@ -1,6 +1,6 @@
 - name: filters demo
   hosts: local
-  connections: local
+  connection: local
   vars:
     GREETINGS: GOOD EVENING
   tasks:
