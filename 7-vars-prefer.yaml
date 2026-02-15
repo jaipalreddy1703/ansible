@@ -3,14 +3,21 @@
   connection: local
   vars:
     NAME: "name from  play"
-  vars_files:
-  - course.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: Enter name
-    private: false
+  # vars_files:
+  # - course.yaml
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: Enter name
+  #   private: false
 
   tasks:
   - name: print name
+    # vars:
+    #   NAME: "name from tasks"
     ansible.builtin.debug:
       msg: "Hi..{{NAME}}"
+
+# 1. command line args
+# 2. Tasks
+# 3. vars_files
+# 4. prompt
