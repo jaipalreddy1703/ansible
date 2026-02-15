@@ -1,0 +1,8 @@
+name: check red hat or not
+hosts: local
+connection: local
+tasks:
+- name: red hat condition
+  ansible.builtin.debug:
+    msg: "You are on RedHat system"
+  when: ansible_facts.os_family == "RedHat"
