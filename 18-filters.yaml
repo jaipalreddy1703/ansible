@@ -6,4 +6,4 @@
   tasks:
     name: splitting based on cama
     ansible.builtin.debug:
-      msg: "{{topics | split(',')}}"
+      msg: "{{topics}}"
