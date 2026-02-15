@@ -4,6 +4,6 @@
   vars:
     topics: linux, shell, ansible, terraform
   tasks:
-    name: split
+  - name: split
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
