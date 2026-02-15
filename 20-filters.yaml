@@ -1,0 +1,10 @@
+- name: ipv4 or not
+  hosts: local
+  connection: local
+  vars:
+    myip: "10.156.4.9"
+
+  tasks:
+  - name: ipv4 check
+    ansible.builtin.debug:
+      msg: "{{ myip | ansible.utils.ipv4 }} "
