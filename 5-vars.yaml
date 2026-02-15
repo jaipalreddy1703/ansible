@@ -1,4 +1,4 @@
-- name: prompts
+- name: print based on prompting
   hosts: local
   connection: local
   vars_prompt:
