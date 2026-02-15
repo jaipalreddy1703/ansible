@@ -4,9 +4,9 @@
   vars:
     topics: linux, shell, ansible, terraform
   tags:
-    name: ansible
-    project: roboshop
-    coomponent: catalogue
+  - name: ansible
+  - project: roboshop
+  - coomponent: catalogue
   tasks:
   - name: split
     ansible.builtin.debug:
