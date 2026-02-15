@@ -1,8 +1,8 @@
 - name: filters demo
   hosts: local
   connection: local
-  vars:
-    GREETINGS: GOOD EVENING
+  # vars:
+  #   GREETINGS: GOOD EVENING
   tasks:
   - name: greeting
     ansible.builtin.debug:
